@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2BFCDA94D5DBD56048C0840 /* Pods_FetchedTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD269D491B374A515D95D631 /* Pods_FetchedTableView.framework */; };
+		E9BCC82D1C845D9C00F707A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC82C1C845D9C00F707A5 /* main.m */; };
+		E9BCC83B1C845D9C00F707A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9BCC83A1C845D9C00F707A5 /* Assets.xcassets */; };
+		E9BCC83E1C845D9C00F707A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BCC83C1C845D9C00F707A5 /* LaunchScreen.storyboard */; };
+		E9BCC8471C845DAD00F707A5 /* HBSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8461C845DAD00F707A5 /* HBSAppDelegate.m */; };
+		E9BCC85E1C845E0700F707A5 /* HBSDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC84A1C845E0700F707A5 /* HBSDataController.m */; };
+		E9BCC8601C845E0700F707A5 /* HBSNote.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC84E1C845E0700F707A5 /* HBSNote.m */; };
+		E9BCC8611C845E0700F707A5 /* HBSNote+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8501C845E0700F707A5 /* HBSNote+CoreDataProperties.m */; };
+		E9BCC8621C845E0700F707A5 /* HBSNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8521C845E0700F707A5 /* HBSNotebook.m */; };
+		E9BCC8631C845E0700F707A5 /* HBSNotebook+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8541C845E0700F707A5 /* HBSNotebook+CoreDataProperties.m */; };
+		E9BCC8641C845E0700F707A5 /* HBSNotebooksTableViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8561C845E0700F707A5 /* HBSNotebooksTableViewFactory.m */; };
+		E9BCC8651C845E0700F707A5 /* HBSNotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8581C845E0700F707A5 /* HBSNotebooksViewController.m */; };
+		E9BCC8661C845E0700F707A5 /* HBSRootFetchedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC85A1C845E0700F707A5 /* HBSRootFetchedTableViewController.m */; };
+		E9BCC8671C845E0700F707A5 /* HBSRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC85C1C845E0700F707A5 /* HBSRootNavigationController.m */; };
+		E9BCC8691C845E3C00F707A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BCC8681C845E3C00F707A5 /* Main.storyboard */; };
+		E9BCC86C1C845E4100F707A5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC86A1C845E4100F707A5 /* Model.xcdatamodeld */; };
+		E9BCC8741C848B5600F707A5 /* HBSNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8731C848B5600F707A5 /* HBSNotesViewController.m */; };
+		E9BCC8771C848B6D00F707A5 /* HBSNotesTableViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8761C848B6D00F707A5 /* HBSNotesTableViewFactory.m */; };
+		E9BCC87B1C84974600F707A5 /* HBSNotebookEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC87A1C84974600F707A5 /* HBSNotebookEditorViewController.m */; };
+		E9BCC87F1C84A23400F707A5 /* HBSNoteEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC87E1C84A23400F707A5 /* HBSNoteEditorViewController.m */; };
+		E9BCC8831C84AA5400F707A5 /* UIAlertController+managedObjectDeleteAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8821C84AA5400F707A5 /* UIAlertController+managedObjectDeleteAlert.m */; };
+		E9BCC8BA1C84FABE00F707A5 /* HBSColorBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8B91C84FABE00F707A5 /* HBSColorBar.m */; };
+		E9BCC8C11C85B22A00F707A5 /* HBSNotebooksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8C01C85B22A00F707A5 /* HBSNotebooksTableViewCell.m */; };
+		E9BCC8C71C85BC1100F707A5 /* HBSGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8C61C85BC1100F707A5 /* HBSGroup.m */; };
+		E9BCC8CB1C85E41E00F707A5 /* HBSNoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCC8C91C85E41E00F707A5 /* HBSNoteTableViewCell.m */; };
+		E9BCC8CC1C85E41E00F707A5 /* HBSNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BCC8CA1C85E41E00F707A5 /* HBSNoteTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5FF090E5F23E855378ABE096 /* Pods-FetchedTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchedTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FetchedTableView/Pods-FetchedTableView.release.xcconfig"; sourceTree = "<group>"; };
+		74624BD86E674742576BFA9A /* Pods-FetchedTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchedTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FetchedTableView/Pods-FetchedTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		E9BCC8281C845D9C00F707A5 /* FetchedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BCC82C1C845D9C00F707A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9BCC83A1C845D9C00F707A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9BCC83D1C845D9C00F707A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9BCC83F1C845D9C00F707A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9BCC8451C845DAD00F707A5 /* HBSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSAppDelegate.h; sourceTree = "<group>"; };
+		E9BCC8461C845DAD00F707A5 /* HBSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSAppDelegate.m; sourceTree = "<group>"; };
+		E9BCC8491C845E0700F707A5 /* HBSDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSDataController.h; sourceTree = "<group>"; };
+		E9BCC84A1C845E0700F707A5 /* HBSDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSDataController.m; sourceTree = "<group>"; };
+		E9BCC84D1C845E0700F707A5 /* HBSNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSNote.h; sourceTree = "<group>"; };
+		E9BCC84E1C845E0700F707A5 /* HBSNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSNote.m; sourceTree = "<group>"; };
+		E9BCC84F1C845E0700F707A5 /* HBSNote+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HBSNote+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E9BCC8501C845E0700F707A5 /* HBSNote+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HBSNote+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E9BCC8511C845E0700F707A5 /* HBSNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSNotebook.h; sourceTree = "<group>"; };
+		E9BCC8521C845E0700F707A5 /* HBSNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSNotebook.m; sourceTree = "<group>"; };
+		E9BCC8531C845E0700F707A5 /* HBSNotebook+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HBSNotebook+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E9BCC8541C845E0700F707A5 /* HBSNotebook+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HBSNotebook+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E9BCC8551C845E0700F707A5 /* HBSNotebooksTableViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSNotebooksTableViewFactory.h; sourceTree = "<group>"; };
+		E9BCC8561C845E0700F707A5 /* HBSNotebooksTableViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSNotebooksTableViewFactory.m; sourceTree = "<group>"; };
+		E9BCC8571C845E0700F707A5 /* HBSNotebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSNotebooksViewController.h; sourceTree = "<group>"; };
+		E9BCC8581C845E0700F707A5 /* HBSNotebooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSNotebooksViewController.m; sourceTree = "<group>"; };
+		E9BCC8591C845E0700F707A5 /* HBSRootFetchedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSRootFetchedTableViewController.h; sourceTree = "<group>"; };
+		E9BCC85A1C845E0700F707A5 /* HBSRootFetchedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSRootFetchedTableViewController.m; sourceTree = "<group>"; };
+		E9BCC85B1C845E0700F707A5 /* HBSRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSRootNavigationController.h; sourceTree = "<group>"; };
+		E9BCC85C1C845E0700F707A5 /* HBSRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSRootNavigationController.m; sourceTree = "<group>"; };
+		E9BCC8681C845E3C00F707A5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E9BCC86B1C845E4100F707A5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		E9BCC8721C848B5600F707A5 /* HBSNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSNotesViewController.h; sourceTree = "<group>"; };
+		E9BCC8731C848B5600F707A5 /* HBSNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSNotesViewController.m; sourceTree = "<group>"; };
+		E9BCC8751C848B6D00F707A5 /* HBSNotesTableViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSNotesTableViewFactory.h; sourceTree = "<group>"; };
+		E9BCC8761C848B6D00F707A5 /* HBSNotesTableViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSNotesTableViewFactory.m; sourceTree = "<group>"; };
+		E9BCC8791C84974600F707A5 /* HBSNotebookEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSNotebookEditorViewController.h; sourceTree = "<group>"; };
+		E9BCC87A1C84974600F707A5 /* HBSNotebookEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSNotebookEditorViewController.m; sourceTree = "<group>"; };
+		E9BCC87D1C84A23400F707A5 /* HBSNoteEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSNoteEditorViewController.h; sourceTree = "<group>"; };
+		E9BCC87E1C84A23400F707A5 /* HBSNoteEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSNoteEditorViewController.m; sourceTree = "<group>"; };
+		E9BCC8811C84AA5400F707A5 /* UIAlertController+managedObjectDeleteAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+managedObjectDeleteAlert.h"; sourceTree = "<group>"; };
+		E9BCC8821C84AA5400F707A5 /* UIAlertController+managedObjectDeleteAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+managedObjectDeleteAlert.m"; sourceTree = "<group>"; };
+		E9BCC8B81C84FABE00F707A5 /* HBSColorBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSColorBar.h; sourceTree = "<group>"; };
+		E9BCC8B91C84FABE00F707A5 /* HBSColorBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSColorBar.m; sourceTree = "<group>"; };
+		E9BCC8BF1C85B22A00F707A5 /* HBSNotebooksTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSNotebooksTableViewCell.h; sourceTree = "<group>"; };
+		E9BCC8C01C85B22A00F707A5 /* HBSNotebooksTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSNotebooksTableViewCell.m; sourceTree = "<group>"; };
+		E9BCC8C51C85BC1100F707A5 /* HBSGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSGroup.h; sourceTree = "<group>"; };
+		E9BCC8C61C85BC1100F707A5 /* HBSGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSGroup.m; sourceTree = "<group>"; };
+		E9BCC8C81C85E41E00F707A5 /* HBSNoteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSNoteTableViewCell.h; sourceTree = "<group>"; };
+		E9BCC8C91C85E41E00F707A5 /* HBSNoteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSNoteTableViewCell.m; sourceTree = "<group>"; };
+		E9BCC8CA1C85E41E00F707A5 /* HBSNoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HBSNoteTableViewCell.xib; sourceTree = "<group>"; };
+		FD269D491B374A515D95D631 /* Pods_FetchedTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FetchedTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9BCC8251C845D9C00F707A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2BFCDA94D5DBD56048C0840 /* Pods_FetchedTableView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5056411B37559E1E6A78B95F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD269D491B374A515D95D631 /* Pods_FetchedTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC89C441AF3B562092C586D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74624BD86E674742576BFA9A /* Pods-FetchedTableView.debug.xcconfig */,
+				5FF090E5F23E855378ABE096 /* Pods-FetchedTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9BCC81F1C845D9C00F707A5 = {
+			isa = PBXGroup;
+			children = (
+				E9BCC82A1C845D9C00F707A5 /* FetchedTableView */,
+				E9BCC8291C845D9C00F707A5 /* Products */,
+				BC89C441AF3B562092C586D0 /* Pods */,
+				5056411B37559E1E6A78B95F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9BCC8291C845D9C00F707A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC8281C845D9C00F707A5 /* FetchedTableView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9BCC82A1C845D9C00F707A5 /* FetchedTableView */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC8BB1C84FFA900F707A5 /* Views */,
+				E9BCC8801C84AA1800F707A5 /* Helpers */,
+				E9BCC86D1C84602A00F707A5 /* Data */,
+				E9BCC86F1C84603E00F707A5 /* Abstract */,
+				E9BCC8701C84862300F707A5 /* Notebooks */,
+				E9BCC8711C84866F00F707A5 /* Notes */,
+				E9BCC8781C84972500F707A5 /* NotebookEditor */,
+				E9BCC87C1C84A20600F707A5 /* NoteEditor */,
+				E9BCC8451C845DAD00F707A5 /* HBSAppDelegate.h */,
+				E9BCC8461C845DAD00F707A5 /* HBSAppDelegate.m */,
+				E9BCC8681C845E3C00F707A5 /* Main.storyboard */,
+				E9BCC83A1C845D9C00F707A5 /* Assets.xcassets */,
+				E9BCC83C1C845D9C00F707A5 /* LaunchScreen.storyboard */,
+				E9BCC83F1C845D9C00F707A5 /* Info.plist */,
+				E9BCC86A1C845E4100F707A5 /* Model.xcdatamodeld */,
+				E9BCC82B1C845D9C00F707A5 /* Supporting Files */,
+			);
+			path = FetchedTableView;
+			sourceTree = "<group>";
+		};
+		E9BCC82B1C845D9C00F707A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC82C1C845D9C00F707A5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9BCC86D1C84602A00F707A5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC88B1C84B4C600F707A5 /* inner */,
+				E9BCC8491C845E0700F707A5 /* HBSDataController.h */,
+				E9BCC84A1C845E0700F707A5 /* HBSDataController.m */,
+				E9BCC84D1C845E0700F707A5 /* HBSNote.h */,
+				E9BCC84E1C845E0700F707A5 /* HBSNote.m */,
+				E9BCC8511C845E0700F707A5 /* HBSNotebook.h */,
+				E9BCC8521C845E0700F707A5 /* HBSNotebook.m */,
+				E9BCC8C51C85BC1100F707A5 /* HBSGroup.h */,
+				E9BCC8C61C85BC1100F707A5 /* HBSGroup.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		E9BCC86F1C84603E00F707A5 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC85B1C845E0700F707A5 /* HBSRootNavigationController.h */,
+				E9BCC85C1C845E0700F707A5 /* HBSRootNavigationController.m */,
+				E9BCC8591C845E0700F707A5 /* HBSRootFetchedTableViewController.h */,
+				E9BCC85A1C845E0700F707A5 /* HBSRootFetchedTableViewController.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		E9BCC8701C84862300F707A5 /* Notebooks */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC8571C845E0700F707A5 /* HBSNotebooksViewController.h */,
+				E9BCC8581C845E0700F707A5 /* HBSNotebooksViewController.m */,
+				E9BCC8551C845E0700F707A5 /* HBSNotebooksTableViewFactory.h */,
+				E9BCC8561C845E0700F707A5 /* HBSNotebooksTableViewFactory.m */,
+				E9BCC8BF1C85B22A00F707A5 /* HBSNotebooksTableViewCell.h */,
+				E9BCC8C01C85B22A00F707A5 /* HBSNotebooksTableViewCell.m */,
+			);
+			name = Notebooks;
+			sourceTree = "<group>";
+		};
+		E9BCC8711C84866F00F707A5 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC8721C848B5600F707A5 /* HBSNotesViewController.h */,
+				E9BCC8731C848B5600F707A5 /* HBSNotesViewController.m */,
+				E9BCC8751C848B6D00F707A5 /* HBSNotesTableViewFactory.h */,
+				E9BCC8761C848B6D00F707A5 /* HBSNotesTableViewFactory.m */,
+				E9BCC8C81C85E41E00F707A5 /* HBSNoteTableViewCell.h */,
+				E9BCC8C91C85E41E00F707A5 /* HBSNoteTableViewCell.m */,
+				E9BCC8CA1C85E41E00F707A5 /* HBSNoteTableViewCell.xib */,
+			);
+			name = Notes;
+			sourceTree = "<group>";
+		};
+		E9BCC8781C84972500F707A5 /* NotebookEditor */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC8791C84974600F707A5 /* HBSNotebookEditorViewController.h */,
+				E9BCC87A1C84974600F707A5 /* HBSNotebookEditorViewController.m */,
+			);
+			name = NotebookEditor;
+			sourceTree = "<group>";
+		};
+		E9BCC87C1C84A20600F707A5 /* NoteEditor */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC87D1C84A23400F707A5 /* HBSNoteEditorViewController.h */,
+				E9BCC87E1C84A23400F707A5 /* HBSNoteEditorViewController.m */,
+			);
+			name = NoteEditor;
+			sourceTree = "<group>";
+		};
+		E9BCC8801C84AA1800F707A5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC8811C84AA5400F707A5 /* UIAlertController+managedObjectDeleteAlert.h */,
+				E9BCC8821C84AA5400F707A5 /* UIAlertController+managedObjectDeleteAlert.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		E9BCC88B1C84B4C600F707A5 /* inner */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC84F1C845E0700F707A5 /* HBSNote+CoreDataProperties.h */,
+				E9BCC8501C845E0700F707A5 /* HBSNote+CoreDataProperties.m */,
+				E9BCC8531C845E0700F707A5 /* HBSNotebook+CoreDataProperties.h */,
+				E9BCC8541C845E0700F707A5 /* HBSNotebook+CoreDataProperties.m */,
+			);
+			name = inner;
+			sourceTree = "<group>";
+		};
+		E9BCC8BB1C84FFA900F707A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCC8B81C84FABE00F707A5 /* HBSColorBar.h */,
+				E9BCC8B91C84FABE00F707A5 /* HBSColorBar.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9BCC8271C845D9C00F707A5 /* FetchedTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9BCC8421C845D9C00F707A5 /* Build configuration list for PBXNativeTarget "FetchedTableView" */;
+			buildPhases = (
+				D058956442AF42CFDDF75D5C /* Check Pods Manifest.lock */,
+				E9BCC8241C845D9C00F707A5 /* Sources */,
+				E9BCC8251C845D9C00F707A5 /* Frameworks */,
+				E9BCC8261C845D9C00F707A5 /* Resources */,
+				5FD7618C2A7E955C8350DF08 /* Embed Pods Frameworks */,
+				87295236C8958756055B044A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FetchedTableView;
+			productName = FetchedTableView;
+			productReference = E9BCC8281C845D9C00F707A5 /* FetchedTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9BCC8201C845D9C00F707A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = IndependentLabs;
+				TargetAttributes = {
+					E9BCC8271C845D9C00F707A5 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E9BCC8231C845D9C00F707A5 /* Build configuration list for PBXProject "FetchedTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9BCC81F1C845D9C00F707A5;
+			productRefGroup = E9BCC8291C845D9C00F707A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9BCC8271C845D9C00F707A5 /* FetchedTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9BCC8261C845D9C00F707A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BCC8691C845E3C00F707A5 /* Main.storyboard in Resources */,
+				E9BCC83E1C845D9C00F707A5 /* LaunchScreen.storyboard in Resources */,
+				E9BCC83B1C845D9C00F707A5 /* Assets.xcassets in Resources */,
+				E9BCC8CC1C85E41E00F707A5 /* HBSNoteTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FD7618C2A7E955C8350DF08 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FetchedTableView/Pods-FetchedTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87295236C8958756055B044A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FetchedTableView/Pods-FetchedTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D058956442AF42CFDDF75D5C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9BCC8241C845D9C00F707A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BCC87B1C84974600F707A5 /* HBSNotebookEditorViewController.m in Sources */,
+				E9BCC8C11C85B22A00F707A5 /* HBSNotebooksTableViewCell.m in Sources */,
+				E9BCC8621C845E0700F707A5 /* HBSNotebook.m in Sources */,
+				E9BCC8601C845E0700F707A5 /* HBSNote.m in Sources */,
+				E9BCC8BA1C84FABE00F707A5 /* HBSColorBar.m in Sources */,
+				E9BCC86C1C845E4100F707A5 /* Model.xcdatamodeld in Sources */,
+				E9BCC8741C848B5600F707A5 /* HBSNotesViewController.m in Sources */,
+				E9BCC8771C848B6D00F707A5 /* HBSNotesTableViewFactory.m in Sources */,
+				E9BCC8C71C85BC1100F707A5 /* HBSGroup.m in Sources */,
+				E9BCC82D1C845D9C00F707A5 /* main.m in Sources */,
+				E9BCC85E1C845E0700F707A5 /* HBSDataController.m in Sources */,
+				E9BCC8611C845E0700F707A5 /* HBSNote+CoreDataProperties.m in Sources */,
+				E9BCC8831C84AA5400F707A5 /* UIAlertController+managedObjectDeleteAlert.m in Sources */,
+				E9BCC8671C845E0700F707A5 /* HBSRootNavigationController.m in Sources */,
+				E9BCC8CB1C85E41E00F707A5 /* HBSNoteTableViewCell.m in Sources */,
+				E9BCC8631C845E0700F707A5 /* HBSNotebook+CoreDataProperties.m in Sources */,
+				E9BCC87F1C84A23400F707A5 /* HBSNoteEditorViewController.m in Sources */,
+				E9BCC8661C845E0700F707A5 /* HBSRootFetchedTableViewController.m in Sources */,
+				E9BCC8471C845DAD00F707A5 /* HBSAppDelegate.m in Sources */,
+				E9BCC8641C845E0700F707A5 /* HBSNotebooksTableViewFactory.m in Sources */,
+				E9BCC8651C845E0700F707A5 /* HBSNotebooksViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9BCC83C1C845D9C00F707A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9BCC83D1C845D9C00F707A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9BCC8401C845D9C00F707A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9BCC8411C845D9C00F707A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9BCC8431C845D9C00F707A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74624BD86E674742576BFA9A /* Pods-FetchedTableView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FetchedTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IndependentLabs.FetchedTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9BCC8441C845D9C00F707A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FF090E5F23E855378ABE096 /* Pods-FetchedTableView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FetchedTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IndependentLabs.FetchedTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9BCC8231C845D9C00F707A5 /* Build configuration list for PBXProject "FetchedTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BCC8401C845D9C00F707A5 /* Debug */,
+				E9BCC8411C845D9C00F707A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9BCC8421C845D9C00F707A5 /* Build configuration list for PBXNativeTarget "FetchedTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BCC8431C845D9C00F707A5 /* Debug */,
+				E9BCC8441C845D9C00F707A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9BCC86A1C845E4100F707A5 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9BCC86B1C845E4100F707A5 /* Model.xcdatamodel */,
+			);
+			currentVersion = E9BCC86B1C845E4100F707A5 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E9BCC8201C845D9C00F707A5 /* Project object */;
+}

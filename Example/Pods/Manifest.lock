@@ -1,0 +1,16 @@
+PODS:
+  - HBSFetchedTableController (0.1)
+
+DEPENDENCIES:
+  - HBSFetchedTableController (from `../`)
+
+EXTERNAL SOURCES:
+  HBSFetchedTableController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HBSFetchedTableController: 341bed8b9d6b00bd8e0a64ab50b0dbde813a0374
+
+PODFILE CHECKSUM: df5897b7083a295c0ff03d2b48c8753066315fd0
+
+COCOAPODS: 1.0.0.beta.4

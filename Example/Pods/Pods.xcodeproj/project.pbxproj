@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20F803E08874F88ADACF6EC5106202E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF5AB5B54B363C26154E2E84D77B7E /* Foundation.framework */; };
+		285BA0F12B7ED30BEC08DB6D6D19FCD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF5AB5B54B363C26154E2E84D77B7E /* Foundation.framework */; };
+		315F14AD282AC3C8AB07465A1D115417 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907B151AB480928BFB8F37C05606B46A /* UIKit.framework */; };
+		4B8D8470D052784B1FBDF66C135EFC53 /* HBSTableViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5845BB6AFE7E9C33D51965E5598C127E /* HBSTableViewFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59D1B4E446EC6C8701B5513B64F7DE06 /* HBSFetchedTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BA952B08657F47DC36E9D74473DE44 /* HBSFetchedTableController.m */; };
+		6D63B48A4829F1FC5E93CEA48586D8BD /* Pods-FetchedTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3A89920560E567A455A32895D2F499 /* Pods-FetchedTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83BA38388D540F04CC8BFC99FFFD9A8C /* HBSFetchedTableController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB094CD3F3722A6982304DF6DA43504 /* HBSFetchedTableController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C2DA7FF50EEBC325EF82E553CC61D6F /* HBSFetchedTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = 505124A90498A873590985CB1741F57D /* HBSFetchedTableController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE403761E6CC8F46BC89B35F2AEF6E57 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FCCE4F01DF3C2F08860FB5EB7689F1 /* CoreData.framework */; };
+		B90EC86466636552C0E5A9692A81B587 /* Pods-FetchedTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFACA04B0896ABF4DD72AE609D97CB /* Pods-FetchedTableView-dummy.m */; };
+		FB7F0439052C6411D22C1FB2FC0BC342 /* HBSFetchedTableController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57749A7D42DC94BC8583079376A5BA56 /* HBSFetchedTableController-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		117338E475EE8770637F9A01C689034C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D419D69319317EA19AFF7B0C9E24BC33;
+			remoteInfo = HBSFetchedTableController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032BC2861ECA29C28E5B6F1C80C0EF9D /* HBSFetchedTableController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HBSFetchedTableController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CDB8AEDB1DDC00A9F94D26F7EDDE382 /* Pods-FetchedTableView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FetchedTableView-frameworks.sh"; sourceTree = "<group>"; };
+		3A99085978A06374778D3B9B85FC8329 /* HBSFetchedTableController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HBSFetchedTableController-prefix.pch"; sourceTree = "<group>"; };
+		3B171CDB8007685DD2ED51E4EB053189 /* Pods-FetchedTableView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FetchedTableView-resources.sh"; sourceTree = "<group>"; };
+		4FB8D8223D6D38A0FEC59997E1736CD8 /* Pods-FetchedTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FetchedTableView.release.xcconfig"; sourceTree = "<group>"; };
+		505124A90498A873590985CB1741F57D /* HBSFetchedTableController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HBSFetchedTableController.h; sourceTree = "<group>"; };
+		57749A7D42DC94BC8583079376A5BA56 /* HBSFetchedTableController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HBSFetchedTableController-dummy.m"; sourceTree = "<group>"; };
+		5845BB6AFE7E9C33D51965E5598C127E /* HBSTableViewFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HBSTableViewFactory.h; sourceTree = "<group>"; };
+		69AA4D32D328983C742D0CF3C200FF84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7280237F84765086BD80A31116B38C7F /* HBSFetchedTableController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HBSFetchedTableController.modulemap; sourceTree = "<group>"; };
+		8A3A89920560E567A455A32895D2F499 /* Pods-FetchedTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FetchedTableView-umbrella.h"; sourceTree = "<group>"; };
+		8FB8FDB2F6A5F93761DE55A957F1893F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907B151AB480928BFB8F37C05606B46A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		947A674D71A45E9485CC522FC8A4E89D /* HBSFetchedTableController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HBSFetchedTableController.xcconfig; sourceTree = "<group>"; };
+		A7BA952B08657F47DC36E9D74473DE44 /* HBSFetchedTableController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HBSFetchedTableController.m; sourceTree = "<group>"; };
+		B0DCF1FBACEB27BBEB454367148A4177 /* Pods-FetchedTableView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FetchedTableView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEEF5AB5B54B363C26154E2E84D77B7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C31FF42E5E6BB277AD4D31251AE8AA48 /* Pods-FetchedTableView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FetchedTableView-acknowledgements.plist"; sourceTree = "<group>"; };
+		CEB094CD3F3722A6982304DF6DA43504 /* HBSFetchedTableController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HBSFetchedTableController-umbrella.h"; sourceTree = "<group>"; };
+		D9FCCE4F01DF3C2F08860FB5EB7689F1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		DC28ED01A5E9AA67E2E6652B61B05F01 /* Pods-FetchedTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FetchedTableView.modulemap"; sourceTree = "<group>"; };
+		DCFFACA04B0896ABF4DD72AE609D97CB /* Pods-FetchedTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FetchedTableView-dummy.m"; sourceTree = "<group>"; };
+		DEE9A83E61DDE105B5805E415645B083 /* Pods-FetchedTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FetchedTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		ECC5AFEC2A14BE3A1A99690D4A855AF8 /* Pods_FetchedTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FetchedTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55F0371C07CAE8EE583C421A303CF049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F803E08874F88ADACF6EC5106202E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		957FE9384B7DE6851E2EFDEC285D2529 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE403761E6CC8F46BC89B35F2AEF6E57 /* CoreData.framework in Frameworks */,
+				285BA0F12B7ED30BEC08DB6D6D19FCD5 /* Foundation.framework in Frameworks */,
+				315F14AD282AC3C8AB07465A1D115417 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F55FE539573E9C8A89326FA15F0B898D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FD39EAD9DBA0F99C792E3F5997A3567 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D46AAE74BE9A097F9BF4C910C4538E23 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		6AE3D26E1150D5056ACC80E0F2C72BE3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B444E5AEE1DB74C32079FDED84439E87 /* Pods-FetchedTableView */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7CBE5854B8422D01E8E8B89A621F5CA5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFF07D8DE9CBCD08E92CEFC262A4131E /* HBSFetchedTableController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				7CBE5854B8422D01E8E8B89A621F5CA5 /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				94EAE8923926D9914362B154B87B22D4 /* Products */,
+				6AE3D26E1150D5056ACC80E0F2C72BE3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		94EAE8923926D9914362B154B87B22D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				032BC2861ECA29C28E5B6F1C80C0EF9D /* HBSFetchedTableController.framework */,
+				ECC5AFEC2A14BE3A1A99690D4A855AF8 /* Pods_FetchedTableView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B444E5AEE1DB74C32079FDED84439E87 /* Pods-FetchedTableView */ = {
+			isa = PBXGroup;
+			children = (
+				8FB8FDB2F6A5F93761DE55A957F1893F /* Info.plist */,
+				DC28ED01A5E9AA67E2E6652B61B05F01 /* Pods-FetchedTableView.modulemap */,
+				B0DCF1FBACEB27BBEB454367148A4177 /* Pods-FetchedTableView-acknowledgements.markdown */,
+				C31FF42E5E6BB277AD4D31251AE8AA48 /* Pods-FetchedTableView-acknowledgements.plist */,
+				DCFFACA04B0896ABF4DD72AE609D97CB /* Pods-FetchedTableView-dummy.m */,
+				0CDB8AEDB1DDC00A9F94D26F7EDDE382 /* Pods-FetchedTableView-frameworks.sh */,
+				3B171CDB8007685DD2ED51E4EB053189 /* Pods-FetchedTableView-resources.sh */,
+				8A3A89920560E567A455A32895D2F499 /* Pods-FetchedTableView-umbrella.h */,
+				DEE9A83E61DDE105B5805E415645B083 /* Pods-FetchedTableView.debug.xcconfig */,
+				4FB8D8223D6D38A0FEC59997E1736CD8 /* Pods-FetchedTableView.release.xcconfig */,
+			);
+			name = "Pods-FetchedTableView";
+			path = "Target Support Files/Pods-FetchedTableView";
+			sourceTree = "<group>";
+		};
+		BDA5712CA0211FD3B2AF98F7E13ECAEE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7280237F84765086BD80A31116B38C7F /* HBSFetchedTableController.modulemap */,
+				947A674D71A45E9485CC522FC8A4E89D /* HBSFetchedTableController.xcconfig */,
+				57749A7D42DC94BC8583079376A5BA56 /* HBSFetchedTableController-dummy.m */,
+				3A99085978A06374778D3B9B85FC8329 /* HBSFetchedTableController-prefix.pch */,
+				CEB094CD3F3722A6982304DF6DA43504 /* HBSFetchedTableController-umbrella.h */,
+				69AA4D32D328983C742D0CF3C200FF84 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HBSFetchedTableController";
+			sourceTree = "<group>";
+		};
+		D46AAE74BE9A097F9BF4C910C4538E23 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				505124A90498A873590985CB1741F57D /* HBSFetchedTableController.h */,
+				A7BA952B08657F47DC36E9D74473DE44 /* HBSFetchedTableController.m */,
+				5845BB6AFE7E9C33D51965E5598C127E /* HBSTableViewFactory.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F55FE539573E9C8A89326FA15F0B898D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D9FCCE4F01DF3C2F08860FB5EB7689F1 /* CoreData.framework */,
+				BEEF5AB5B54B363C26154E2E84D77B7E /* Foundation.framework */,
+				907B151AB480928BFB8F37C05606B46A /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FFF07D8DE9CBCD08E92CEFC262A4131E /* HBSFetchedTableController */ = {
+			isa = PBXGroup;
+			children = (
+				2FD39EAD9DBA0F99C792E3F5997A3567 /* Pod */,
+				BDA5712CA0211FD3B2AF98F7E13ECAEE /* Support Files */,
+			);
+			name = HBSFetchedTableController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CAF6AB2ECCE1212DA1992802B1379C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D63B48A4829F1FC5E93CEA48586D8BD /* Pods-FetchedTableView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22BC37C644787A7A7EC1935A66DE556C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BA38388D540F04CC8BFC99FFFD9A8C /* HBSFetchedTableController-umbrella.h in Headers */,
+				8C2DA7FF50EEBC325EF82E553CC61D6F /* HBSFetchedTableController.h in Headers */,
+				4B8D8470D052784B1FBDF66C135EFC53 /* HBSTableViewFactory.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04179CDCBC49D9FB07DC1B63CCB7491A /* Pods-FetchedTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24AC74C7BE15D8911CCC96EC3B94543B /* Build configuration list for PBXNativeTarget "Pods-FetchedTableView" */;
+			buildPhases = (
+				4CE1E3A08B2C9548B1772F5B5DB9DD82 /* Sources */,
+				55F0371C07CAE8EE583C421A303CF049 /* Frameworks */,
+				1CAF6AB2ECCE1212DA1992802B1379C6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E34236FB0F8618B9BDD92B375235291 /* PBXTargetDependency */,
+			);
+			name = "Pods-FetchedTableView";
+			productName = "Pods-FetchedTableView";
+			productReference = ECC5AFEC2A14BE3A1A99690D4A855AF8 /* Pods_FetchedTableView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D419D69319317EA19AFF7B0C9E24BC33 /* HBSFetchedTableController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3449DAA5C53BABE96A9CF0CCD45D8E9 /* Build configuration list for PBXNativeTarget "HBSFetchedTableController" */;
+			buildPhases = (
+				47BF7ABCE9AE1C0C270DD5F581CE3498 /* Sources */,
+				957FE9384B7DE6851E2EFDEC285D2529 /* Frameworks */,
+				22BC37C644787A7A7EC1935A66DE556C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HBSFetchedTableController;
+			productName = HBSFetchedTableController;
+			productReference = 032BC2861ECA29C28E5B6F1C80C0EF9D /* HBSFetchedTableController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 94EAE8923926D9914362B154B87B22D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D419D69319317EA19AFF7B0C9E24BC33 /* HBSFetchedTableController */,
+				04179CDCBC49D9FB07DC1B63CCB7491A /* Pods-FetchedTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47BF7ABCE9AE1C0C270DD5F581CE3498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7F0439052C6411D22C1FB2FC0BC342 /* HBSFetchedTableController-dummy.m in Sources */,
+				59D1B4E446EC6C8701B5513B64F7DE06 /* HBSFetchedTableController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE1E3A08B2C9548B1772F5B5DB9DD82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90EC86466636552C0E5A9692A81B587 /* Pods-FetchedTableView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E34236FB0F8618B9BDD92B375235291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HBSFetchedTableController;
+			target = D419D69319317EA19AFF7B0C9E24BC33 /* HBSFetchedTableController */;
+			targetProxy = 117338E475EE8770637F9A01C689034C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		19411BD381283C287CF957881F49BD8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 947A674D71A45E9485CC522FC8A4E89D /* HBSFetchedTableController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HBSFetchedTableController/HBSFetchedTableController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HBSFetchedTableController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HBSFetchedTableController/HBSFetchedTableController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HBSFetchedTableController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CB1D107F87FAF8C6A3F8E92F1317ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE9A83E61DDE105B5805E415645B083 /* Pods-FetchedTableView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FetchedTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FetchedTableView/Pods-FetchedTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FetchedTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70ED7BA863FEDDFCA6088A0E04B5409E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1B685D9073CDF53C548503CD4FD8B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E306858878C883379CC3C879887570EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB8D8223D6D38A0FEC59997E1736CD8 /* Pods-FetchedTableView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FetchedTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FetchedTableView/Pods-FetchedTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FetchedTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECD17D5014C5650E51942CA25C23E91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 947A674D71A45E9485CC522FC8A4E89D /* HBSFetchedTableController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HBSFetchedTableController/HBSFetchedTableController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HBSFetchedTableController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HBSFetchedTableController/HBSFetchedTableController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HBSFetchedTableController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24AC74C7BE15D8911CCC96EC3B94543B /* Build configuration list for PBXNativeTarget "Pods-FetchedTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB1D107F87FAF8C6A3F8E92F1317ECA /* Debug */,
+				E306858878C883379CC3C879887570EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1B685D9073CDF53C548503CD4FD8B53 /* Debug */,
+				70ED7BA863FEDDFCA6088A0E04B5409E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3449DAA5C53BABE96A9CF0CCD45D8E9 /* Build configuration list for PBXNativeTarget "HBSFetchedTableController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD17D5014C5650E51942CA25C23E91F /* Debug */,
+				19411BD381283C287CF957881F49BD8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

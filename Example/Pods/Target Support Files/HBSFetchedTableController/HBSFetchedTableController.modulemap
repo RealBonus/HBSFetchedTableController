@@ -1,0 +1,6 @@
+framework module HBSFetchedTableController {
+  umbrella header "HBSFetchedTableController-umbrella.h"
+
+  export *
+  module * { export * }
+}
