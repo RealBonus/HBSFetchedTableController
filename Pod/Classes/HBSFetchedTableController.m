@@ -372,8 +372,6 @@
                                          @"tableView:canEditRowAtIndexPath:",
                                          @"tableView:canMoveRowAtIndexPath:",
                                          @"tableView:moveRowAtIndexPath:toIndexPath:",
-                                         @"tableView:titleForHeaderInSection:",
-                                         @"tableView:titleForFooterInSection:",
                                          @"tableView:accessoryButtonTappedForRowWithIndexPath:"];
     }
     
