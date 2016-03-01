@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(nullable NSString *)sectionName;
 - (void)configureHeader:(UIView *)header forSection:(nullable NSString *)sectionName;
 - (void)configureFooter:(UIView *)footer forSection:(nullable NSString *)sectionName;
+- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(nullable NSString *)sectionName;
+- (NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(nullable NSString *)sectionName;
 
 #pragma mark Row, Header and Footer heights
 - (CGFloat)tableView:(UITableView *)tableView heightForRow:(NSIndexPath *)indexPath inSection:(nullable NSString *)sectionName;

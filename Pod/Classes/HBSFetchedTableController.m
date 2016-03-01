@@ -172,6 +172,14 @@
     return [_tableViewFactory tableView:tableView viewForFooterInSection:[self sectionNameAtIndex:section]];
 }
 
+- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [_tableViewFactory tableView:tableView titleForHeaderInSection:[self sectionNameAtIndex:section]];
+}
+
+- (NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    return [_tableViewFactory tableView:tableView titleForFooterInSection:[self sectionNameAtIndex:section]];
+}
+
 
 #pragma mark - TableView Delegate
 #pragma mark TableViewFactory part
@@ -339,6 +347,8 @@
     if (_factorySelectorRespondingMap == nil) {
         _factorySelectorRespondingMap = @{ @"tableView:viewForHeaderInSection:": @"tableView:viewForHeaderInSection:",
                                            @"tableView:viewForFooterInSection:": @"tableView:viewForFooterInSection:",
+                                           @"tableView:titleForHeaderInSection:": @"tableView:titleForHeaderInSection:",
+                                           @"tableView:titleForFooterInSection:": @"tableView:titleForFooterInSection:",
                                            @"tableView:willDisplayHeaderView:forSection:": @"configureHeader:forSection:",
                                            @"tableView:willDisplayFooterView:forSection:": @"configureFooter:forSection:",
                                            @"tableView:heightForRowAtIndexPath:": @"tableView:heightForRow:inSection:",
@@ -346,7 +356,8 @@
                                            @"tableView:heightForFooterInSection:": @"tableView:heightForFooterInSection:",
                                            @"tableView:estimatedHeightForRowAtIndexPath:": @"tableView:estimatedHeightForRow:inSection:",
                                            @"tableView:estimatedHeightForHeaderInSection:": @"tableView:estimatedHeightForHeaderInSection:",
-                                           @"tableView:estimatedHeightForFooterInSection:": @"tableView:estimatedHeightForFooterInSection:"};
+                                           @"tableView:estimatedHeightForFooterInSection:": @"tableView:estimatedHeightForFooterInSection:",
+                                           };
     }
     
     return _factorySelectorRespondingMap;

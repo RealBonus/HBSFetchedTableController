@@ -22,8 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath;
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
-- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section;
-- (NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section;
 
 @end
 
