@@ -11,12 +11,12 @@ Pod::Spec.new do |s|
   s.name         = "HBSFetchedTableController"
   s.version      = "0.1"
   s.summary      = "A layer between UITableView and NSFetchedResultsController."
-  s.description  = "Layer between CoreData's NSFetchedResultsController and UITableView. Wraps around all nasty code, and let you split your code by logic - factories and delegates."
+  s.description  = "Layer between CoreData's NSFetchedResultsController and UITableView. Incapsulates all boilerplate code, and let you split your code by logic - configuration factories and behaviour delegates."
 
   s.homepage     = "https://github.com/RealBonus/HBSFetchedTableController"
   s.license      = "MIT"
   s.author             = { "Pavel Anokhov" => "p.anokhov@gmail.com" }
-  # s.social_media_url   = "http://twitter.com/Pavel Anokhov"
+  s.social_media_url   = "https://www.instagram.com/pavel_anokhov/"
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
