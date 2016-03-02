@@ -2,6 +2,9 @@
 
 Communication point between CoreData and TableView.
 
+![header:YES mid:NO](./Screenshots/small.png "header:YES mid:NO")  
+**[Shrink Flags] header:YES mid:NO**
+
 ## Installation
 
 #### CocoaPods
@@ -14,7 +17,7 @@ pod "HBSFetchedTableController"
 
 #### Manually
 
-Add the [HBSFetchedTableController](./HBSFetchedTableController) directory to your project.
+Add the [HBSFetchedTableController](./Pod/Classes) directory to your project.
 
 ## Basics
 
@@ -26,7 +29,7 @@ Add the [HBSFetchedTableController](./HBSFetchedTableController) directory to yo
 
 ## Usage
 
-Usually you create a UIViewController subclass, make it conforms a HBSFetchedTableControllerDelegate, and put there all UITableViewDelegate methods, that you need (like `tableView:didSelectRowAtIndexPath:`).
+Create a UIViewController subclass, make it conforms a HBSFetchedTableControllerDelegate, and put there all UITableViewDelegate user-events methods, that you need (like `tableView:didSelectRowAtIndexPath:`).
 Create a class, that conforms HBSTableViewFactory protocol, and put there all cell configuration methods. Now all you need is configured NSFetchedResultController.
 With tableView, delegate, factory and fetched controller, you create HBSFetchedTableController with `initWithTableView:delegate:andTableViewFactory:` (or with a simple `init`, and pass delegates and factories one by one). That's all! Your table filled with fetched results.
 
@@ -39,9 +42,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## HBSFetchedTableControllerDelegate <UITableViewDelegate>
 
-HBSFetchedTableController set itself as tableView's delegate, to receive row configuration calls and forward it to factory. When you need a method from tableView, you simply implement it in your viewController (or other delegate), and set it as fetchedTableController.delegate. FetchedTableController forwards most important methods to delegate, if delegate responds to them. 
-FetchedTableController has an array of string, representing of forwarded methods, so if method that you need not forwarded, just add signature to array.
-Don't forget to include contains of default array.
+HBSFetchedTableController set itself as tableView's delegate, to receive row configuration calls and forward it to factory. If you need a method from tableView, simply implement it in your viewController (or other object), and set it as fetchedTableController.delegate. FetchedTableController forwards most important methods to delegate, if delegate responds to them. 
+FetchedTableController has an array of string (property `delegateSelectorsToForward`), representing selector signatures, so if you need some additional method, just add signature to array. This property is default array, not an addition to default, so don't forget to include default array to your new array.
 Methods that forwarded by default:
 ```objective-c
 - tableView:shouldHighlightRowAtIndexPath:
@@ -51,8 +53,6 @@ Methods that forwarded by default:
 - tableView:canEditRowAtIndexPath:
 - tableView:canMoveRowAtIndexPath:
 - tableView:moveRowAtIndexPath:toIndexPath:
-- tableView:titleForHeaderInSection:
-- tableView:titleForFooterInSection:
 - tableView:accessoryButtonTappedForRowWithIndexPath:
 ```
 
@@ -67,3 +67,16 @@ Factories implements two required methods:
 ```
 First method gets called rights before tableView is about to show a cell. In this method factory must only create (or dequeue) cell, and return it.
 Second method gets called after first method, and in other cases - when fetchedResultsController signals that object has changed or moved. Here factory performs all cell configurations.
+
+## Requirements
+
+- ARC.
+- Most iOs and Xcode should work, nothing special.
+
+## Author
+
+Anokhov Pavel, p.anokhov@gmail.com
+
+## License
+
+TKParallaxScrollView is available under the MIT license. See the LICENSE file for more info.
