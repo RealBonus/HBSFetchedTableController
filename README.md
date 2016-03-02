@@ -91,4 +91,4 @@ Anokhov Pavel, p.anokhov@gmail.com
 
 ## License
 
-TKParallaxScrollView is available under the MIT license. See the LICENSE file for more info.
+HBSFetchedTableController is available under the MIT license. See the LICENSE file for more info.
