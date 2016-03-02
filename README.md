@@ -29,6 +29,14 @@ Add the [HBSFetchedTableController](./Pod/Classes) directory to your project.
 
 ## Usage
 
+```objective-c
+#import "HBSFetchedTableController.h"
+self.fetchedTableViewController = [[HBSFetchedTableController alloc] initWithTableView:self.tableView
+fetchedResultController:self.fetchedResultsController
+delegate:self
+andTableViewFactory:self.tableViewFactory];
+```
+
 Create a UIViewController subclass, make it conforms a HBSFetchedTableControllerDelegate, and put there all UITableViewDelegate user-events methods, that you need (like `tableView:didSelectRowAtIndexPath:`).
 Create a class, that conforms HBSTableViewFactory protocol, and put there all cell configuration methods. Now all you need is configured NSFetchedResultController.
 With tableView, delegate, factory and fetched controller, you create HBSFetchedTableController with `initWithTableView:delegate:andTableViewFactory:` (or with a simple `init`, and pass delegates and factories one by one). That's all! Your table filled with fetched results.
