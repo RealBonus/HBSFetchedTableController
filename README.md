@@ -1,9 +1,9 @@
 # HBSFetchedTableController
 
-Communication point between CoreData and TableView.
+### Communication point between CoreData and TableView.
 
 ![header:YES mid:NO](./Screenshots/small.png "header:YES mid:NO")  
-**[Shrink Flags] header:YES mid:NO**
+
 
 ## Installation
 
@@ -22,6 +22,7 @@ Add the [HBSFetchedTableController](./Pod/Classes) directory to your project.
 ## Basics
 
 **HBSFetchedTableController** works with 4 objects:
+
 1. **UITableView.** FetchedTableController sets itself as tableView's delegate and dataSource, forwards behaviour and configuration methods to delegates, and provides data source information from fetched results controller.
 2. **NSFetchedResultsController.** FetchedTableController sets itself as fetchedResultsController's delegate, sends notifications to tableView, and uses it as a tableView's data source.
 3. **Delegate.** Object that conforms to **HBSFetchedTableControllerDelegate**. protocol. Controller will forward tableViews.delegate behaviour (user events) calls to this delegate. See Delegate section for details.
@@ -31,6 +32,7 @@ Add the [HBSFetchedTableController](./Pod/Classes) directory to your project.
 
 ```objective-c
 #import "HBSFetchedTableController.h"
+
 self.fetchedTableViewController = [[HBSFetchedTableController alloc] initWithTableView:self.tableView
 fetchedResultController:self.fetchedResultsController
 delegate:self
@@ -48,7 +50,9 @@ HBSNotebooksViewController and HBSNotesViewController inherits from it, and over
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## HBSFetchedTableControllerDelegate <UITableViewDelegate>
+## Delegates and Factories
+
+### HBSFetchedTableControllerDelegate <UITableViewDelegate>
 
 HBSFetchedTableController set itself as tableView's delegate, to receive row configuration calls and forward it to factory. If you need a method from tableView, simply implement it in your viewController (or other object), and set it as fetchedTableController.delegate. FetchedTableController forwards most important methods to delegate, if delegate responds to them. 
 FetchedTableController has an array of string (property `delegateSelectorsToForward`), representing selector signatures, so if you need some additional method, just add signature to array. This property is default array, not an addition to default, so don't forget to include default array to your new array.
@@ -64,22 +68,22 @@ Methods that forwarded by default:
 - tableView:accessoryButtonTappedForRowWithIndexPath:
 ```
 
-## HBSTableViewFactory
+### HBSTableViewFactory
 
 It is a good practice to separate tableView behaviour methods from configuration methods. Most method signatures duplicates UITableViewDelegate and DataSource signatures, but providing NSString as section names instead of just indexes (they are useless without conversion).
 
 Factories implements two required methods:
 ```objective-c
-- (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath inSection:(nullable NSString *)sectionName;
-- (void)configureCell:(UITableViewCell*)cell atIndexPath:(NSIndexPath*)indexPath withObject:(nullable id)object inSection:(nullable NSString *)sectionName;
+- tableView:cellForRowAtIndexPath:inSection:
+- configureCell:atIndexPath:withObject:inSection:
 ```
 First method gets called rights before tableView is about to show a cell. In this method factory must only create (or dequeue) cell, and return it.
 Second method gets called after first method, and in other cases - when fetchedResultsController signals that object has changed or moved. Here factory performs all cell configurations.
 
 ## Requirements
 
-- ARC.
-- Most iOs and Xcode should work, nothing special.
+- ARC
+- CoreData
 
 ## Author
 
