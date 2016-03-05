@@ -41,7 +41,6 @@ static NSString * const kSegueIdentifiersCreateNote = @"createNote";
     }
     
     return _tableViewFactory;
-    return nil;
 }
 
 
