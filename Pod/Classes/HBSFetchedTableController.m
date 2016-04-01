@@ -37,6 +37,15 @@
         _tableViewFactory = tableViewFactory;
         _delegate = delegate;
         
+        if (_fetchedResultController.fetchedObjects == nil) {
+            NSError *error;
+            [_fetchedResultController performFetch:&error];
+            
+            if (error) {
+                NSLog(@"%@, %@: Error performing fetch: %@", self.class, self, error);
+            }
+        }
+        
         _delegateRespondsToUpdates = [_delegate respondsToSelector:@selector(tableDidUpdateForFetchedTableViewController:)];
         _tableView.dataSource = self;
         _tableView.delegate = self;
