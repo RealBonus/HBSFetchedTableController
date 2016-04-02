@@ -155,7 +155,9 @@
 
 #pragma mark - TableView DataSource
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [_tableViewFactory tableView:tableView cellForRowAtIndexPath:indexPath inSection:[self sectionNameAtIndex:indexPath.section]];
+    return [_tableViewFactory tableView:tableView cellForRowAtIndexPath:indexPath
+                             withObject:[_fetchedResultController objectAtIndexPath:indexPath]
+                              inSection:[self sectionNameAtIndex:indexPath.section]];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

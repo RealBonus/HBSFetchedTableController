@@ -21,7 +21,7 @@ static NSString * const kCellIdentifiersSectionHeader = @"h";
 }
 
 #pragma mark - Cell building
-- (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath inSection:(NSString *)sectionName {
+- (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath withObject:(id)object inSection:(NSString *)sectionName {
     HBSNotebooksTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifiersNotebookCell];
     if (cell == nil) {
         cell = [[HBSNotebooksTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kCellIdentifiersNotebookCell];

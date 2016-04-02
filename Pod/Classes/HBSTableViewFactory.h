@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 #pragma mark Providing Cells and headers
 /** This method called when tableView requests a cell. You should only dequeue cell here, perform basic setup if needed, and return it. */
-- (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath inSection:(nullable NSString *)sectionName;
+- (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath withObject:(nullable id)object inSection:(nullable NSString *)sectionName;
 /** This methos called when tableView's willDisplayCell method, AND when fetchedRequestController updates object. You should perform all cell configurations and setups here, like labels and images. */
 - (void)configureCell:(UITableViewCell*)cell atIndexPath:(NSIndexPath*)indexPath withObject:(nullable id)object inSection:(nullable NSString *)sectionName;
 

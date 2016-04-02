@@ -28,7 +28,7 @@ static NSString * const kNibNameNoteCell = @"HBSNoteTableViewCell";
 
 
 #pragma mark - Cell building
-- (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath inSection:(NSString *)sectionName {
+- (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath withObject:(id)object inSection:(NSString *)sectionName {
     HBSNoteTableViewCell *cell = (HBSNoteTableViewCell*)[tableView dequeueReusableCellWithIdentifier:kCellIdentifiersNoteCell];
     return cell;
 }
