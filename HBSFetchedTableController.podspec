@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HBSFetchedTableController"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A layer between UITableView and NSFetchedResultsController."
   s.description  = "Layer between CoreData's NSFetchedResultsController and UITableView. Incapsulates all boilerplate code, and let you split your code by logic - configuration factories and behaviour delegates."
 

@@ -74,7 +74,7 @@ It is a good practice to separate tableView behaviour methods from configuration
 
 Factories implements two required methods:
 ```objective-c
-- tableView:cellForRowAtIndexPath:inSection:
+- tableView:cellForRowAtIndexPath:withObject:inSection:
 - configureCell:atIndexPath:withObject:inSection:
 ```
 First method gets called rights before tableView is about to show a cell. In this method factory must only create (or dequeue) cell, and return it.
