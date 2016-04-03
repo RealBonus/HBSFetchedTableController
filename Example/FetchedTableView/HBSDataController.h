@@ -35,7 +35,7 @@ extern NSString *const kHBSSaveContextNotification;
 
 /** Creates InMemory store.
  @returns YES if no errors occured, otherwise NO. */
-- (BOOL)createInMemoryStoreWithModel:(NSManagedObjectModel *)managedObjectModel error:(NSError *__autoreleasing *)error;
+- (BOOL)createInMemoryStoreWithModel:(NSURL*)modelUrl error:(NSError**)error;
 
 - (BOOL)saveContext;
 

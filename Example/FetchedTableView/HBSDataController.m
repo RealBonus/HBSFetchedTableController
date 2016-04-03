@@ -41,11 +41,14 @@ NSString *const kHBSSaveContextNotification = @"SaveContext";
     NSManagedObjectModel *managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelUrl];
     NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
     
-    [persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:error];
+    NSError *innerError;
+    BOOL success = [persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&innerError];
     
-    if (*error != nil) {
-        NSLog(@"Error adding persistentStoreCoordinator");
-        return NO;
+    if (success) {
+        if (error) {
+            *error = innerError;
+            return NO;
+        }
     }
     
     NSManagedObjectContext *managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
@@ -59,14 +62,18 @@ NSString *const kHBSSaveContextNotification = @"SaveContext";
     return YES;
 }
 
-- (BOOL)createInMemoryStoreWithModel:(NSManagedObjectModel *)managedObjectModel error:(NSError *__autoreleasing *)error {
+- (BOOL)createInMemoryStoreWithModel:(NSURL*)modelUrl error:(NSError **)error {
+    NSManagedObjectModel *managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelUrl];
     NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
     
-    [persistentStoreCoordinator addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:error];
+    NSError *innerError;
+    BOOL success = [persistentStoreCoordinator addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:&innerError];
     
-    if (*error != nil) {
-        NSLog(@"Error adding persistentStoreCoordinator");
-        return NO;
+    if (success) {
+        if (error) {
+            *error = innerError;
+            return NO;
+        }
     }
     
     NSManagedObjectContext *managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
