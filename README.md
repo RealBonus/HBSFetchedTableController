@@ -1,5 +1,9 @@
 # HBSFetchedTableController
 
+[![Version](https://img.shields.io/cocoapods/v/HBSFetchedTableController.svg?style=flat)](http://cocoapods.org/pods/HBSFetchedTableController)
+[![License](https://img.shields.io/cocoapods/l/HBSFetchedTableController.svg?style=flat)](http://cocoapods.org/pods/HBSFetchedTableController)
+[![Platform](https://img.shields.io/cocoapods/p/HBSFetchedTableController.svg?style=flat)](http://cocoapods.org/pods/HBSFetchedTableController)
+
 ### Communication point between CoreData and TableView.
 
 ![header:YES mid:NO](./Screenshots/small.png "header:YES mid:NO")  
